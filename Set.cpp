@@ -9,7 +9,7 @@ int main() {
     cout << *(s.begin()) << endl;//输出集合s的第一个元素（前面的星号表示要对指针取值）
     for (int i = 0; i < 6; i++) {
         s.insert(i);//向集合s里面插入i
-
+        s.
     }
     for (auto it = s.begin(); it != s.end(); it++) {//用迭代器遍历集合s里面的每一个元素
         cout << *it << " ";
