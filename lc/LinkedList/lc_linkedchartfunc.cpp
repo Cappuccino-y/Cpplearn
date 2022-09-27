@@ -211,7 +211,7 @@ ListNode *detectCycle(ListNode *head) {//注意跳跃式check
     return nullptr;
 }
 
-ListNode *detectCycle(ListNode *head) {
+ListNode *detectCyclemy(ListNode *head) {
     if (head == nullptr || head->next == nullptr)
         return nullptr;
     ListNode *fast = head;

@@ -22,7 +22,7 @@ int main() {
     cout << v1.size() << endl;
     const int m = v1[0];
     cout << m << endl;
-    vector<int> a; // 定义的时候不指定vector的大小
+    vector<int> a;// 定义的时候不指定vector的大小
     cout << a.size() << endl; // 这个时候size是0
     for (int i = 0; i < 10; i++) {
         a.push_back(i); // 在vector a的末尾添加元素i
