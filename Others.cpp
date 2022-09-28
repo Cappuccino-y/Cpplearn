@@ -44,6 +44,7 @@ int main() {
 //isalnum（字母大写小写+数字）
 //isblank（space和\t）
     string s1 = to_string(123); // 将123这个数字转成字符串
+    s1.e
     cout << s1 << endl;
     string s2 = to_string(4.5); // 将4.5这个数字转成字符串
     cout << s2 << endl;
