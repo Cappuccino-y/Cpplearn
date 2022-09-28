@@ -9,7 +9,6 @@ int main() {
     m["hello"] = 2; // 将key为"hello", value为2的键值对(key-value)存入map中
     cout << m["hello"] << endl; // 访问map中key为"hello"的value, 如果key不存在，则返回0
     cout << m["world"] << endl;
-    m.f
     m["world"] = 3; // 将"world"键对应的值修改为3
     m[","] = 1; // 设立一组键值对，键为"," 值为1
     //用迭代器遍历，输出map中所有的元素，键：it->first获取，值：it->second获取
