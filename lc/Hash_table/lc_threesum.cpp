@@ -10,6 +10,43 @@
 using namespace std;
 
 vector<vector<int>> threeSum(vector<int> &nums) {
+    vector<vector<int>> res;
+    int size = nums.size();
+    if (size <= 2) {
+        return res;
+    }
+    sort(nums.begin(), nums.end());
+    int left;
+    int right;
+    for (int i = 0; i < size - 2; i++) {
+        if (nums[i] > 0) {
+            break;
+        }
+        if (i > 0 && nums[i - 1] == nums[i]) {
+            continue;
+        }
+        left = i + 1;
+        right = size - 1;
+        while (left != right) {
+            if (nums[i] + nums[left] + nums[right] < 0)
+                left++;
+            else if (nums[i] + nums[left] + nums[right] > 0)
+                right--;
+            else if (nums[i] + nums[left] + nums[right] == 0) {
+                if ((right < size - 1 && nums[right + 1] == nums[right]) ||
+                    (left > i + 1 && nums[left - 1] == nums[left])) {
+                    left++;
+                    continue;
+                }
+                res.push_back(vector<int>{nums[i], nums[left], nums[right]});
+                left++;
+            }
+        }
+    }
+    return res;
+}//简单通过
+
+vector<vector<int>> threeSum_initiall(vector<int> &nums) {
     unordered_set<int> rec;
     unordered_map<string, vector<int>> res;
     vector<vector<int>> result;
@@ -31,3 +68,7 @@ vector<vector<int>> threeSum(vector<int> &nums) {
     return result;
 }
 
+int main() {
+    vector<int> asd = {1, 0, -1};
+    threeSum(asd);
+}
