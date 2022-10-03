@@ -15,6 +15,9 @@ int main() {
     int val2 = 2;
     cout << to_string(val) + to_string(val2) << endl;
     if (asd.find(1) != asd.end()) {
-        cout << "yes";
+        cout << "yes" << endl;
     }
+    string as;
+    as.append("y");
+    cout << as << endl;
 }
