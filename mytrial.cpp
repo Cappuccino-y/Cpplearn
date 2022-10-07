@@ -18,6 +18,6 @@ int main() {
         cout << "yes" << endl;
     }
     string as;
-    as.append("y");
-    cout << as << endl;
+    as.append("yasdasdl2317");
+    cout << as[-1] << endl;
 }
