@@ -10,7 +10,7 @@
 using namespace std;
 
 //使用KMP算法
-int strStr_nm(string haystack, string needle) {
+int strStr_question(string haystack, string needle) {
     int temp;
     for (int i = 0; i < haystack.size(); ++i) {
         temp = i;
@@ -40,6 +40,39 @@ void getNext(int *next, const string &s) {
         next[i] = j;
     }
 }
+
+void pre(int *a, string &s) {
+    int j = 0;
+    a[0] = 0;
+    for (int i = 1; i < s.size(); ++i) {
+        while (j > 0 && s[j] != s[i]) {
+            j = a[j - 1];
+        }
+        if (s[j] == s[i]) {
+            j++;
+        }
+        a[i] = j;
+    }
+}
+
+int strStr_my(string haystack, string needle) {
+    int next[needle.size()];
+    pre(next, needle);
+    int j = 0;
+    for (int i = 0; i < haystack.size(); ++i) {
+        while (j > 0 && haystack[i] != needle[j]) {
+            j = next[j - 1];
+        }
+        if (haystack[i] == needle[j]) {
+            j++;
+        }
+        if (j == needle.size()) {
+            return i - needle.size() + 1;
+        }
+    }
+    return -1;
+}
+
 
 int strStr(string haystack, string needle) {
     if (needle.size() == 0) {

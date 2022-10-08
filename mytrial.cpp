@@ -4,6 +4,7 @@
 # include <iostream>
 # include <unordered_map>
 # include <unordered_set>
+# include <algorithm>
 
 using namespace std;
 
@@ -20,4 +21,9 @@ int main() {
     string as;
     as.append("yasdasdl2317");
     cout << as[-1] << endl;
+    int a[4]{2, 3, 4, 5};
+    for (int m:a) {
+        cout << m << endl;
+    }
+    cout << *max_element(a, a + 4);
 }
