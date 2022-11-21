@@ -12,7 +12,6 @@ int main() {
     for (int i = 0; i < 6; i++) {
         s.insert(i);//向集合s里面插入i
     }
-    s.fin
     for (auto it = s.begin(); it != s.end(); it++) {//用迭代器遍历集合s里面的每一个元素
         cout << *it << " ";
     }
