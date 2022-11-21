@@ -35,6 +35,11 @@ int main() {
     cout << trial(val) << endl;
     cout << &val << endl;
     cout << asdaq[1] << endl;
+    as.resize(3);
+    stack<int> aasd;
+
+    int c = stoi("-3");
+    cout << c << endl;
 
 //    cout << as[-1] << endl;
 //    int a[4]{2, 3, 4, 5};

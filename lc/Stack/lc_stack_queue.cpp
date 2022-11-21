@@ -64,6 +64,8 @@ public:
 
     void push(int x) {
         In.push(x);
+        unordered_map<int, int> as;
+        as.
     }
 
     int pop() {
