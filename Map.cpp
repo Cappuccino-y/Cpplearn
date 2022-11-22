@@ -14,7 +14,9 @@ int main() {
     //用迭代器遍历，输出map中所有的元素，键：it->first获取，值：it->second获取
     for (auto it = m.begin(); it != m.end(); it++) {
         cout << it->first << " " << it->second << endl;
+        cout << (*it) << endl;
     }
+
     // 访问map的第一个元素，输出它的键和值
     cout << m.begin()->first << " " << m.begin()->second << endl;
     // 访问map的最后一个元素，输出它的键和值

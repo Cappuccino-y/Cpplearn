@@ -6,6 +6,7 @@
 # include <unordered_set>
 # include <algorithm>
 # include <stack>
+# include <deque>
 
 using namespace std;
 
@@ -16,9 +17,11 @@ int &trial(int &as) {
 int main() {
 
     vector<int> dqe = {3, 4, 21};
+    deque<int> ast(dqe.begin(), dqe.end());
     vector<int> asdaq(dqe.begin(), dqe.end() - 1);
     stack<int> asq1;
-    asq1.push(34);
+    ast.
+            asq1.push(34);
     asq1.pop();
     cout << asq1.top();
     unordered_map<int, int> asd;
