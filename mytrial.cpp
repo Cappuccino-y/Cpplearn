@@ -20,8 +20,7 @@ int main() {
     deque<int> ast(dqe.begin(), dqe.end());
     vector<int> asdaq(dqe.begin(), dqe.end() - 1);
     stack<int> asq1;
-    ast.
-            asq1.push(34);
+    asq1.push(34);
     asq1.pop();
     cout << asq1.top();
     unordered_map<int, int> asd;
@@ -43,6 +42,11 @@ int main() {
 
     int c = stoi("-3");
     cout << c << endl;
+    vector<string> as23(3);
+    as23[0].append("3213");
+    as23[0].resize(3);
+    string qw2;
+    cout << qw2;
 
 //    cout << as[-1] << endl;
 //    int a[4]{2, 3, 4, 5};
