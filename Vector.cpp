@@ -57,5 +57,7 @@ int main() {
     for (auto it = c.begin(); it != c.end(); it++) { // 使用迭代器访问vector
         cout << *it << " ";
     }
+    vector<int> aqw(c.begin(),c.begin());
+    cout << aqw.size();
     return 0;
 }
