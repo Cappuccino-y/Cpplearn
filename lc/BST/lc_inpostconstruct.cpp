@@ -23,7 +23,7 @@ struct TreeNode {
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
 
-int findIndex(vector<int> res, int target) {
+int findIndex(vector<int> &res, int &target) {
     for (int i = 0; i < res.size(); ++i) {
         if (res[i] == target) return i;
     }
@@ -32,7 +32,7 @@ int findIndex(vector<int> res, int target) {
 
 void build(vector<int> &inorder, vector<int> &postorder, TreeNode *node) {
     int size = inorder.size();
-    if (size == 0 || size == 1) return;
+    if (size == 0) return;
     int partition_inorder = findIndex(inorder, postorder[size - 1]);
     vector<int> left_inorder = vector<int>(inorder.begin(), inorder.begin() + partition_inorder);
     vector<int> left_postorder = vector<int>(postorder.begin(), postorder.begin() + left_inorder.size());
