@@ -12,6 +12,24 @@
 using namespace std;
 
 int countNodes(TreeNode *root) {
+    if (!root) return 0;
+    queue<TreeNode *> temp;
+    temp.push(root);
+    int num = 0;
+    while (!temp.empty()) {
+        int size = temp.size();
+        for (int i = 0; i < size; ++i) {
+            TreeNode *node = temp.front();
+            temp.pop();
+            num++;
+            if (node->left) temp.push(node->left);
+            if (node->right) temp.push(node->right);
+        }
+    }
+    return num;
+}
+
+int countNodes(TreeNode *root) {
     if (root == nullptr) return 0;
     TreeNode *left = root->left;
     TreeNode *right = root->right;

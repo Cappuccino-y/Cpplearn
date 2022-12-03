@@ -99,7 +99,7 @@ TreeNode *traversal(vector<int> &inorder, vector<int> &postorder) {
     return root;
 }
 
-TreeNode *buildTree(vector<int> &inorder, vector<int> &postorder) {
+TreeNode *buildTree_std(vector<int> &inorder, vector<int> &postorder) {
     if (inorder.size() == 0 || postorder.size() == 0) return NULL;
     return traversal(inorder, postorder);
 }
