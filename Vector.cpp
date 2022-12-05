@@ -49,7 +49,8 @@ int main() {
         cout << b[i] << " ";
     }
     cout << endl;
-    vector<int> c(20, 2); // 定义的时候指定vector的大小并把所有的元素赋一个指定的值
+    v.
+            vector < int > c(20, 2); // 定义的时候指定vector的大小并把所有的元素赋一个指定的值
     for (int i = 0; i < c.size(); i++) {
         cout << c[i] << " ";
     }
@@ -57,7 +58,7 @@ int main() {
     for (auto it = c.begin(); it != c.end(); it++) { // 使用迭代器访问vector
         cout << *it << " ";
     }
-    vector<int> aqw(c.begin(),c.begin());
+    vector<int> aqw(c.begin(), c.begin());
     cout << aqw.size();
     return 0;
 }
