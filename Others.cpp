@@ -8,7 +8,7 @@ using namespace std;
 
 int main() {
     auto x = 32;
-    bitset<5> b("11"); //5表示5个⼆进位
+    bitset<5> b(3); //5表示5个⼆进位
     // 初始化⽅式：
     // bitset<5> b; 都为0
     // bitset<5> b(u); u为unsigned int，如果u = 1,则被初始化为10000
