@@ -17,6 +17,8 @@ int main() {
     int n = 0;
     func(n); // n由0变成了99
     vector<int> v1(100, 7);
+    vector<int> v2(133);
+
     cout << v1.size() << endl;
     v1.resize(8);
     cout << v1.size() << endl;
@@ -29,14 +31,8 @@ int main() {
     }
 
     vector<int> v(10);
-    for (int i = 0; i < 10; i++) {
-        cin >> v[i];
-    }
     sort(v.begin(), v.end());// 因为这⾥没有传⼊参数cmp，所以按照默认，v从⼩到⼤排列
     int arr[10];
-    for (int i = 0; i < 10; i++) {
-        cin >> arr[i];
-    }
     sort(arr, arr + 10, cmp); // arr从⼤到⼩排列，因为cmp函数排序规则设置了从⼤到⼩
 
     cout << a.size() << endl; // 此时会发现a的size变成了10
@@ -58,7 +54,12 @@ int main() {
         cout << *it << " ";
     }
     vector<int> aqw(c.begin(), c.begin());
-    cout << aqw.size();
+    cout << aqw.size() << endl;
     vector<vector<int>> temp;
+    vector<int> caq;
+    caq.resize(32, 0);
+    vector<int> as123(caq);
+    as123[0] = 3;
+    cout << caq[0];
     return 0;
 }
