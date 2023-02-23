@@ -17,11 +17,11 @@ int main() {
     int n = 0;
     func(n); // n由0变成了99
     vector<int> v1(100, 7);
-    vector<int> v2(133);
+    vector<int> v2(3);
 
-    cout << v1.size() << endl;
+
     v1.resize(8);
-    cout << v1.size() << endl;
+    cout << v1.back() << endl;
     const int m = v1[0];
     cout << m << endl;
     vector<int> a;// 定义的时候不指定vector的大小

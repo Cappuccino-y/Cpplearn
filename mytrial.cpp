@@ -15,7 +15,9 @@ int &trial(int &as) {
 }
 
 int main() {
-
+    int a = 2, b = 3;
+    swap(a, b);
+    cout << a << b << endl;
     vector<int> dqe = {3, 4, 21};
     deque<int> ast(dqe.begin(), dqe.end());
     vector<int> asdaq(dqe.begin(), dqe.end() - 1);

@@ -23,9 +23,8 @@ int main() {
     int n;
     cin >> n;
     cout << n << endl;
-    cin >> n;
-    cout << n << endl;
     string s;//定义一个空字符串s
+    cout << getchar();
     getline(cin, s);//读取一行的字符串，包括空格
     cout << s << endl;
     cout << s.length();//输出字符串s的长度
