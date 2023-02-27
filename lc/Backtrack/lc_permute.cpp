@@ -8,6 +8,7 @@
 # include <cmath>
 # include <queue>
 # include <stack>
+# include <string>
 
 class Solution {
 public:
@@ -17,6 +18,7 @@ public:
     void permute_nonrepeat(vector<int> &nums, int num, vector<bool> &nums_index) {
         if (num == 0) {
             res.push_back(cur);
+
             return;
         }
 
@@ -27,6 +29,7 @@ public:
                 cur.push_back(nums[i]);
                 nums_index[i] = true;
                 used[nums[i] + 10] = 1;
+
                 permute_nonrepeat(nums, num - 1, nums_index);
                 nums_index[i] = false;
                 cur.pop_back();

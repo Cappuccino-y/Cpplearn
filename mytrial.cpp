@@ -19,6 +19,8 @@ int main() {
     swap(a, b);
     cout << a << b << endl;
     vector<int> dqe = {3, 4, 21};
+    int m = *min_element(dqe.begin(), dqe.end());
+    cout << m;
     deque<int> ast(dqe.begin(), dqe.end());
     vector<int> asdaq(dqe.begin(), dqe.end() - 1);
     stack<int> asq1;

@@ -42,6 +42,5 @@ int minCostClimbingStairs(vector<int> &cost) {
 int main() {
     Solution *as = new Solution();
     cout << as->minCostClimbingStairs(vector<int>{3, 1231, 123});
-
 }
 
